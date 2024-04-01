@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link src="./assets/style.css" rel="stylesheet">
     
 </head>
 <body>
@@ -12,7 +13,13 @@
 
     </header>
     <main>
-        
+        <div>
+            <form class="form" id="modal-form">
+                <label for"task-name" >Task Name</label>
+                <input type="text" id="task-name">
+                <input type="button">
+            </form>
+        </div>
 
         <div id="clockface" class="container columns-3 p-7 max-w-sm  mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-4">
             <div class="shrink-0">
@@ -23,37 +30,14 @@
               </div>
         </div>
     </hr>
-        <div class="container flex  mx-auto px-auto">
-            <div class="flex flex-col w-full border-solid border-4 border-teal-400 font-extrabold">
-                <h3 class="text-2xl p-6 bg-teal-200">Container 1</h3>
-                <div class="flex items-start justify-around h-64 border-dotted border-2 border-red-700" id="container1">
-
-                </div>
-            </div>
-            <div class=" flex  flex-col w-full border-solid border-4 border-teal-400 font-extrabold">
-                <h3 class="text-2xl p-6 bg-teal-200">Container 2 </h3>
-                <div class="flex items-start justify-around h-64 border-dotted border-2 border-red-700" id="container2">
-
-                </div>
-            </div>
-
-            <div class="flex  flex-col w-full border-solid border-4 border-teal-400 font-extrabold ">
-                <h3 class="text-2xl p-6 bg-teal-200" >Container 3 </h3>
-                <div class="flex items-start justify-around h-64 border-dotted border-2 border-red-700" id="container3">
-
-                </div>
-            </div>
-            <div class="flex  flex-col w-full border-solid border-4 border-teal-400 font-extrabold ">
-                <h3 class="text-2xl p-6 bg-teal-200" >Container 4 </h3>
-                <div class="flex items-start justify-around h-64 border-dotted border-2 border-red-700" id="container4">
-
-                </div>
-            </div>
+        <div id="main" class="container flex justify-evenly mx-auto px-auto">
         </div>
+        
     </main>
-    
+
 </body>
 <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js" integrity="sha256-xLD7nhI62fcsEZK2/v8LsBcb4lG7dgULkuXoXB/j91c=" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
 <script>dayjs().format()</script>
 <script src="./assets/script.js"></script>
